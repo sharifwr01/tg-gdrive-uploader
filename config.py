@@ -10,7 +10,7 @@ ADMIN_IDS = [int(id.strip()) for id in ADMIN_IDS_STR.split(',') if id.strip()]
 # Package limits (in bytes)
 # 1 GB = 1024 * 1024 * 1024 bytes
 PACKAGES = {
-    'free': 1 * 1024 * 1024 * 1024,      # 1 GB
+    'free': 20 * 1024 * 1024 * 1024,      # 1 GB
     'basic': 5 * 1024 * 1024 * 1024,     # 5 GB
     'pro': 20 * 1024 * 1024 * 1024,      # 20 GB
     'premium': 50 * 1024 * 1024 * 1024,  # 50 GB
