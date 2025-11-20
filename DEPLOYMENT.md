@@ -34,7 +34,7 @@ sudo apt install git -y
 
 ```bash
 cd /opt
-sudo git clone <your-repository-url> telegram-bot
+sudo git clone https://github.com/sharifwr01/tg-gdrive-uploader telegram-bot
 cd telegram-bot
 ```
 
