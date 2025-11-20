@@ -1,0 +1,21 @@
+[Unit]
+Description=Telegram File Upload Bot
+After=network.target
+
+[Service]
+Type=simple
+User=your_username
+WorkingDirectory=/path/to/telegram-file-upload-bot
+ExecStart=/path/to/venv/bin/python bot.py
+Restart=always
+RestartSec=10
+
+# Environment
+Environment="PYTHONUNBUFFERED=1"
+
+# Logging
+StandardOutput=append:/var/log/telegram-bot/output.log
+StandardError=append:/var/log/telegram-bot/error.log
+
+[Install]
+WantedBy=multi-user.target
